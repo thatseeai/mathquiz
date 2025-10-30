@@ -29,6 +29,7 @@
 - **React 18**: UI 라이브러리
 - **Vite**: 빠른 개발 환경 및 빌드 도구
 - **CSS3**: 반응형 디자인 및 애니메이션
+- **PWA**: 오프라인 지원 및 앱 설치 가능
 - **GitHub Actions**: 자동 배포
 
 ## 디자인 특징
@@ -74,6 +75,30 @@ npm run build
 npm run preview
 ```
 
+## PWA (Progressive Web App)
+
+이 앱은 PWA로 제작되어 **모바일 기기에 앱처럼 설치**할 수 있습니다!
+
+### 모바일에 설치하기
+
+#### Android (Chrome)
+1. 웹사이트 방문
+2. 주소창 오른쪽의 "홈 화면에 추가" 버튼 클릭
+3. 또는 메뉴(⋮) > "앱 설치" 선택
+4. 홈 화면에 앱 아이콘이 추가됩니다
+
+#### iOS (Safari)
+1. 웹사이트 방문
+2. 하단의 공유 버튼 탭
+3. "홈 화면에 추가" 선택
+4. 홈 화면에 앱 아이콘이 추가됩니다
+
+### PWA 기능
+- **오프라인 지원**: 인터넷 없이도 앱 실행 가능
+- **빠른 로딩**: 캐싱을 통한 빠른 시작
+- **전체 화면**: 브라우저 UI 없이 앱처럼 실행
+- **자동 업데이트**: 새 버전 자동 다운로드
+
 ## 배포
 
 이 프로젝트는 GitHub Actions를 통해 GitHub Pages에 자동 배포됩니다.
@@ -82,7 +107,7 @@ npm run preview
 
 1. GitHub에 저장소 생성 및 푸시
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/mathquiz.git
+   git remote add origin https://github.com/thatseeai/mathquiz.git
    git push -u origin main
    ```
 
